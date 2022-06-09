@@ -1,29 +1,30 @@
 // readonly
-// class Person {
-//   public readonly name: string;
-//   constructor(name: string) {
-//     this.name = name;
-//   }
-// }
+class Person1 {
+  public readonly name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
 
-// const person = new Person('Dell');
-// person.name = 'hello';
-// console.log(person.name);
+const person1 = new Person1('Dell');
+// 当赋值时会报错
+// person1.name = 'hello';
+console.log(person1.name);
 
 // 抽象类
-// abstract class Geom {
-//   width: number;
-//   getType() {
-//     return 'Gemo';
-//   }
-//   abstract getArea(): number;
-// }
+abstract class Geom {
+  width: number;
+  getType() {
+    return 'Gemo';
+  }
+  abstract getArea(): number;
+}
 
-// class Circle extends Geom {
-//   getArea() {
-//     return 123;
-//   }
-// }
+class Circle extends Geom {
+  getArea() {
+    return 123;
+  }
+}
 
 // class Square {}
 // class Triangle {}

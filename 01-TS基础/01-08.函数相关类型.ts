@@ -1,14 +1,14 @@
-// function add(first: number, second: number): number {
-//   return first + second;
-// }
+function add1(first: number, second: number): number {
+  return first + second;
+}
 
-// function sayHello(): void {
-//   console.log('hello');
-// }
+function sayHello(): void {
+  console.log('hello');
+}
 
-// function errorEmitter(): never {
-//   while(true) {}
-// }
+function errorEmitter(): never {
+  while(true) {}
+}
 
 function add({ first, second }: { first: number; second: number }): number {
   return first + second;

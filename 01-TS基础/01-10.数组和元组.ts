@@ -5,21 +5,26 @@ const undefinedArr: undefined[] = [undefined];
 
 // type alias 类型别名
 type User = { name: string; age: number };
+const objectArr1: User[] = [{
+    name:"zhangzhengyang",
+    age:11,
+}
+];
 
 class Teacher {
-  name: string;
-  age: number;
+    name: string;
+    age: number;
 }
-
 const objectArr: Teacher[] = [
-  new Teacher(),
-  {
-    name: 'dell',
-    age: 28
-  }
+    new Teacher(),
+    {
+        name: 'dell',
+        age: 28
+    }
 ];
 
 // 元组 tuple
 const teacherInfo: [string, string, number] = ['Dell', 'male', 18];
+
 // csv
 const teacherList: [string, string, number][] = [['dell', 'male', 19], ['sun', 'female', 26], ['jeny', 'female', 38]];

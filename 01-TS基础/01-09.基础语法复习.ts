@@ -7,6 +7,7 @@ const func = (str: string) => {
   return parseInt(str, 10);
 };
 
+// 这里的意思和上面一样
 const func1: (str: string) => number = str => {
   return parseInt(str, 10);
 };
