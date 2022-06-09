@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./demo.ts"
+    "test": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^8.5.4"
-  },
-  "dependencies": {
-    "typescript": "^3.7.3"
+    "parcel": "^2.0.0-alpha.3.2"
   }
 }
