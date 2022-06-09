@@ -35,5 +35,10 @@ run  dev 相当于上面的两个命令
 ]
 },
 
+tsc --init 初始化typeScript项目
+
+tsc demo.ts  命令不会走ts.config.json 
+只有运行 tsc 命令时才会用到ts.config.json 
+
 
 
