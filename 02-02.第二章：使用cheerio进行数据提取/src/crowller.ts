@@ -15,6 +15,7 @@ class Crowller {
     const $ = cheerio.load(html);
     const courseItems = $('.course-item');
     const courseInfos: Course[] = [];
+    // 遍历类名返回的数据
     courseItems.map((index, element) => {
       const descs = $(element).find('.course-desc');
       const title = descs.eq(0).text();
