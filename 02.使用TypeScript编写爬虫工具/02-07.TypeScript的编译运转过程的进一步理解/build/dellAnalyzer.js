@@ -48,3 +48,4 @@ var DellAnalyzer = /** @class */ (function () {
     return DellAnalyzer;
 }());
 exports.default = DellAnalyzer;
+console.log("111-111ceshi123");

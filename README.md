@@ -24,7 +24,9 @@ readonly name: string; 只读
 "build": "tsc"
 },
 需要同时执行 dev:build、dev:start命令
-执行"dev": "concurrently npm:dev:*" 相当于上面的两个命令
+"run": "concurrently npm run dev:build &npm run dev:start"
+"dev": "concurrently npm:dev:*" 
+run  dev 相当于上面的两个命令
 
 // 忽略文件的变化
 "nodemonConfig": {

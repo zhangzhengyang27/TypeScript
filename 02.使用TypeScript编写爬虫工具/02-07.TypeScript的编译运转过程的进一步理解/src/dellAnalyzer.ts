@@ -65,4 +65,4 @@ export default class DellAnalyzer implements Analyzer {
 
   private constructor() {}
 }
-console.log("111-111ceshi1")
+console.log("111-111ceshi123")

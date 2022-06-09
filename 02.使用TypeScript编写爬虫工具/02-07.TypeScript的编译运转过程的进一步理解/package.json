@@ -6,7 +6,8 @@
   "scripts": {
     "dev:build": "tsc -w",
     "dev:start": "nodemon node build/crowller.js",
-    "dev": "concurrently npm:dev:*"
+    "dev": "concurrently npm:dev:*",
+    "run": "concurrently npm run dev:build &npm run dev:start"
   },
   "nodemonConfig": {
     "ignore": [
