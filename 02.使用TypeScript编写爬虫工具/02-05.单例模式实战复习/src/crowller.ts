@@ -3,11 +3,17 @@ import path from 'path';
 import superagent from 'superagent';
 import DellAnalyzer from './dellAnalyzer';
 
+
 export interface Analyzer {
   analyze: (html: string, filePath: string) => string;
 }
 
 class Crowller {
+
+  constructor(private url: string, private analyzer: Analyzer) {
+    this.initSpiderProcess();
+  }
+
   private filePath = path.resolve(__dirname, '../data/course.json');
 
   private async getRawHtml() {
@@ -25,9 +31,7 @@ class Crowller {
     this.writeFile(fileContent);
   }
 
-  constructor(private url: string, private analyzer: Analyzer) {
-    this.initSpiderProcess();
-  }
+
 }
 
 const secret = 'secretKey';

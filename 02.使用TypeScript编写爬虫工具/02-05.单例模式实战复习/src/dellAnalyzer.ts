@@ -17,8 +17,10 @@ interface Content {
 }
 
 export default class DellAnalyzer implements Analyzer {
+  // 设置为私有属性
   private static instance: DellAnalyzer;
 
+  // 单例模式获取实例的方法
   static getInstance() {
     if (!DellAnalyzer.instance) {
       DellAnalyzer.instance = new DellAnalyzer();
