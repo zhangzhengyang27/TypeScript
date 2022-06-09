@@ -52,9 +52,9 @@
 
     /* Additional Checks */
     /* Report errors on unused locals. 报告未使用的变量的错误 */
-    "noUnusedLocals": true,
+    // "noUnusedLocals": true,
     /* Report errors on unused parameters. 报告未使用参数的错误  针对函数中没有使用到的参数*/
-    "noUnusedParameters": true,
+    //  "noUnusedParameters": true,
     // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
     // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
 
