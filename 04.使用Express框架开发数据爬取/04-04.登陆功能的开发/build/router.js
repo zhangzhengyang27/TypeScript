@@ -8,7 +8,7 @@ var crowller_1 = __importDefault(require("./crowller"));
 var dellAnalyzer_1 = __importDefault(require("./dellAnalyzer"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
-var router = express_1.Router();
+var router = (0, express_1.Router)();
 router.get('/', function (req, res) {
     var isLogin = req.session ? req.session.login : false;
     if (isLogin) {
@@ -44,7 +44,7 @@ router.get('/getData', function (req, res) {
     var isLogin = req.session ? req.session.login : false;
     if (isLogin) {
         var secret = 'secretKey';
-        var url = "http://www.dell-lee.com/typescript/demo.html?secret=" + secret;
+        var url = "http://www.dell-lee.com/typescript/demo.html?secret=".concat(secret);
         var analyzer = dellAnalyzer_1.default.getInstance();
         new crowller_1.default(url, analyzer);
         res.send('getData Success!');
