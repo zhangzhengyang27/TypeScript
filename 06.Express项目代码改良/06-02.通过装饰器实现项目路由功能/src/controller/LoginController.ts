@@ -1,4 +1,5 @@
 import 'reflect-metadata';
+// @ts-ignore
 import { Request, Response } from 'express';
 import { controller, get } from './decorator';
 import { getResponseData } from '../utils/util';

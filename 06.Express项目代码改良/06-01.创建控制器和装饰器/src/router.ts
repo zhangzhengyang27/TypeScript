@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+// @ts-ignore
 import { Router, Request, Response, NextFunction } from 'express';
 import Crowller from './utils/crowller';
 import Analyzer from './utils/analyzer';

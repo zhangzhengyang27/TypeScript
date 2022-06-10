@@ -43,3 +43,7 @@ tsc demo.ts 命令不会走ts.config.json
 
 
 
+06-07 项目暂时没有看
+
+
+
