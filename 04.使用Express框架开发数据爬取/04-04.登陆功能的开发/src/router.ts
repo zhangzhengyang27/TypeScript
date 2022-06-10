@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Router, Request, Response } from 'express';
 import Crowller from './crowller';
 import DellAnalyzer from './dellAnalyzer';

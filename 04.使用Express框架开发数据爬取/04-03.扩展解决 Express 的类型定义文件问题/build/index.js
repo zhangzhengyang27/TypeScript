@@ -13,6 +13,6 @@ app.use(function (req, res, next) {
     next();
 });
 app.use(router_1.default);
-app.listen(7001, function () {
+app.listen(7002, function () {
     console.log('server is running');
 });

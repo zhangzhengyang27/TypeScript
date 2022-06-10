@@ -1,5 +1,7 @@
 import express from 'express';
+// @ts-ignore
 import bodyParser from 'body-parser';
+// @ts-ignore
 import cookieSession from 'cookie-session';
 import router from './router';
 

@@ -1,5 +1,8 @@
+// @ts-ignore
 import express, { Request, Response, NextFunction } from 'express';
+// @ts-ignore
 import bodyParser from 'body-parser';
+// @ts-ignore
 import cookieSession from 'cookie-session';
 import router from './router';
 
@@ -15,6 +18,6 @@ app.use(
 
 app.use(router);
 
-app.listen(7001, () => {
+app.listen(7003, () => {
   console.log('server is running');
 });
