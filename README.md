@@ -25,8 +25,8 @@ readonly name: string; 只读
 },
 需要同时执行 dev:build、dev:start命令
 "run": "concurrently npm run dev:build &npm run dev:start"
-"dev": "concurrently npm:dev:*" 
-run  dev 相当于上面的两个命令
+"dev": "concurrently npm:dev:*"
+run dev 相当于上面的两个命令
 
 // 忽略文件的变化
 "nodemonConfig": {
@@ -36,8 +36,9 @@ run  dev 相当于上面的两个命令
 },
 
 tsc --init 初始化typeScript项目
+npm init -y
 
-tsc demo.ts  命令不会走ts.config.json 
+tsc demo.ts 命令不会走ts.config.json
 只有运行 tsc 命令时才会用到ts.config.json 
 
 

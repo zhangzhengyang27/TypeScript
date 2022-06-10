@@ -1,7 +1,7 @@
 enum Status {
   OFFLINE = 1,
-  ONLINE,
-  DELETED
+  ONLINE="jojo",
+  DELETED="11"
 }
 
 console.log(Status.OFFLINE, Status[0]);
@@ -12,16 +12,16 @@ console.log(Status.OFFLINE, Status[0]);
 //   DELETED: 2
 // }
 
-// function getResult(status) {
-//   if (status === Status.OFFLINE) {
-//     return 'offline';
-//   } else if (status === Status.ONLINE) {
-//     return 'online';
-//   } else if (status === Status.DELETED) {
-//     return 'deleted';
-//   }
-//   return 'error';
-// }
+function getResult(status) {
+  if (status === Status.OFFLINE) {
+    return 'offline';
+  } else if (status === Status.ONLINE) {
+    return 'online';
+  } else if (status === Status.DELETED) {
+    return 'deleted';
+  }
+  return 'error';
+}
 
-// const result = getResult(1);
-// console.log(result);
+const result = getResult("jojo");
+console.log(result);
