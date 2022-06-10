@@ -13,6 +13,6 @@ function map<T>(params: Array<T>) {
   return params;
 }
 
-// join<number, string>(1, '1');
-// map<string>(['123']);
+join<number, string>(1, '1');
+map<string>(['123']);
 join(1, '1');
