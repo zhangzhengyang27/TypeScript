@@ -4,18 +4,6 @@ interface Person {
   gender: string;
 }
 
-// type NAME = 'name';
-// key: 'name';
-// Person['name'];
-
-// type T = 'age'
-// key: 'age'
-// Person['age']
-
-// type T = 'gender'
-// key: 'gender'
-// Person['gender']
-
 class Teacher {
   constructor(private info: Person) {}
   getInfo<T extends keyof Person>(key: T): Person[T] {
@@ -30,4 +18,6 @@ const teacher = new Teacher({
 });
 
 const test = teacher.getInfo('name');
+const test1 = teacher.getInfo('age');
 console.log(test);
+console.log(test1);
