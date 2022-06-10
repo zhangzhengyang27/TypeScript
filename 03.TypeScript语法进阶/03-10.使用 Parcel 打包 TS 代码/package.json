@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "parcel src/index.html"
+    "test": "parcel ./src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel-bundler": "^1.12.5"
   }
 }
